@@ -13,10 +13,14 @@ export default function Car() {
         <ReactSpeedometer
           value={state.speed}
           minValue={0}
-          maxValue={160}
+          maxValue={300}
           segments={5}
         />
       )}
+      <div className="onState">
+        {!state.ignition ? <p>Switch is OFF</p> : <p>Switch is ON</p>}
+      </div>
+
       <div className="btnDiv">
         <button onClick={() => dispatchState({ type: "switchOn" })}>
           Switch On

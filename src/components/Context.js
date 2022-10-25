@@ -10,21 +10,26 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case "switchOn":
-      return { ...state, ignition: true };
+      if (!state.ignition && state.speed === 0) {
+        return { ...state, ignition: true };
+      } else if (state.ignition && state.speed !== 0) {
+        return state;
+      } else {
+        return { ...state, ignition: false };
+      }
     case "accelerate":
-      if (state.ignition) {
+      if (state.ignition && state.speed < 300) {
         return { ...state, speed: state.speed + 10 };
       } else {
         return state;
       }
-      break;
+
     case "brake":
       if (state.ignition && state.speed > 0) {
         return { ...state, speed: state.speed - 10 };
       } else {
-        return { ...state, ignition: false };
+        return state;
       }
-      break;
     default:
       return state;
   }
