@@ -1,5 +1,9 @@
 # In this exercise you will use useReducer to build a car.
 
+## Link
+
+- Live Site URL: [https://saadmalik200.github.io/speedometer-use-reducer-react/](https://saadmalik200.github.io/speedometer-use-reducer-react/)
+
 The car has the following values, which should be displayed on the "speedometer":
 
 - started
