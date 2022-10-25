@@ -17,4 +17,16 @@ body {
 
 .car {
   background-color: white;
+  padding: 0 1rem;
+  padding-top: 1.5rem;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.btnDiv button {
+  padding: 0.25rem 0.5rem;
 }
