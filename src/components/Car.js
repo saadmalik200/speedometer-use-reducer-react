@@ -11,10 +11,12 @@ export default function Car() {
     <div className="car">
       {state.ignition && (
         <ReactSpeedometer
-          value={state.speed}
+          value={`${state.speed}`}
           minValue={0}
           maxValue={300}
-          segments={5}
+          needleHeightRatio={0.7}
+          maxSegmentLabels={5}
+          currentValueText={`${state.speed} km/h`}
         />
       )}
       <div className="onState">
