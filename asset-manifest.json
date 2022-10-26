@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/speedometer-use-reducer-react/static/css/main.e2df9983.css",
-    "main.js": "/speedometer-use-reducer-react/static/js/main.5689a0ea.js",
+    "main.js": "/speedometer-use-reducer-react/static/js/main.a80170c2.js",
     "index.html": "/speedometer-use-reducer-react/index.html",
     "main.e2df9983.css.map": "/speedometer-use-reducer-react/static/css/main.e2df9983.css.map",
-    "main.5689a0ea.js.map": "/speedometer-use-reducer-react/static/js/main.5689a0ea.js.map"
+    "main.a80170c2.js.map": "/speedometer-use-reducer-react/static/js/main.a80170c2.js.map"
   },
   "entrypoints": [
     "static/css/main.e2df9983.css",
-    "static/js/main.5689a0ea.js"
+    "static/js/main.a80170c2.js"
   ]
 }
